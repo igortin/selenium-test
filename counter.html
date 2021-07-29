@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counter</title>
+        <script>   
+            
+        let counter = 0;
+
+        function func_count_0(){
+            counter += 1;
+            document.querySelector('h1').innerHTML = counter;
+        }
+
+        function func_count_1(){
+            counter--;
+            document.querySelector('h1').innerHTML = counter;
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#dec').onclick = func_count_1;
+            document.querySelector('#inc').onclick = func_count_0;
+        });
+        
+        
+        </script>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button id="inc">+</button>
+        <button id="dec">-</button>
+    </body>
+<html>
